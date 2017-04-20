@@ -1,11 +1,13 @@
 const express = require("express");
 const app = express();
 const queryAPI = require("./public/routes/searchsalsa")
+const path = require("path");
 
 app.set('view engine', 'ejs')
+app.set('views',path.join(__dirname,'/public' ))
 
 app.get("/", function(req,res){
-    res.send("Hello")
+    res.render("html/home")
 })
 
 app.get("/searchsalsa", queryAPI.searchSalsa)
