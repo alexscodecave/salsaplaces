@@ -10,6 +10,10 @@ app.get("/", function(req,res){
     res.render("html/home")
 })
 
+app.get("/register", function(req,res){
+    res.render("html/register")
+})
+
 app.get("/searchsalsa", queryAPI.searchSalsa)
 
 app.listen(8080,function(req,res){

@@ -1,16 +1,9 @@
 const mongoose = require("mongoose");
 
 const users= mongoose.Schema({
-    local:{
-        email:String,
-        password:String,
-    },
-    facebook:{
-        id:String,
-        token:String,
-        email:String,
-        name:String
-    }
+    username:{type:String,required:true,unique:true},
+    email:{type:String,required:true},
+    password:String
 })
 
 module.exports = mongoose.model('User',users)

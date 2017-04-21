@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <% include head %>
+
+</head>
+
+<header>
+    <% include header %>
+</header>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <form role="form" action="/registeruser">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="form-group">
+                        <label for="nameInput">Register email</label>
+                        <div class="input-group">
+                            <input type="email" class="form-control" name="InputName" id="nameInput" placeholder="Register email" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailInput">Enter username</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="emailInput" placeholder="Enter email" />
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordInput">Enter password</label>
+                            <div class="input-group">
+                                <input type="password" class="form-control" id="passwordInput" placeholder="Enter password" />
+
+                            </div>
+                            <input type="submit" name="submit" id="submit" value="Register user" class="btn">
+                        </div>
+                    </div>
+                </div>
+                
+
+            </form>
+
+            </div>
+
+
+</body>
+
+
+</html>
