@@ -1,19 +1,33 @@
 <html>
 
 <head>
-<% include head %>
+    <% include head %>
 
 </head>
 
 <body>
 
-<header>
-<% include header %>
-</header>
+    <header>
+        <% include header %>
+    </header>
 
-<footer>
-<% include footer %>
-</footer>
+    <div class="container">
+    <form role="form">
+        <div class="row">
+            <div class="form-group">
+                
+                <input class="form-control input-lg" type="text">
+            </div>
+        </div>
+        <div class="row">
+            <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+    </form>
+</div>
+
+    <footer>
+        <% include footer %>
+    </footer>
 
 </body>
 
